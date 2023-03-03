@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+      }
+      th{
+        background-color:aquamarine;
+      }
+    </style>
+</head>
+<body>
+    <table style="width:30%">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr>
+        <tr><th>2</th><td>a</td><td style="background-color: lightgreen;">b</td><td style="background-color: lightgreen;">c</td><td>d</td><td>e</td></tr>
+        <tr><th>3</td><td>f</td><td>g</td><td>h</td><td>i</td><td style="background-color: lightgreen;">j</td></tr>
+        <tr><th>4</td><td>k</td><td>l</td><td>m</td><td>n</td><td style="background-color: lightgreen;">o</td></tr>
+        <tr><th>5</td><td style="background-color: green;">p</td><td style="background-color: green;">q</td><td style="background-color: green;">r</td><td>s</td><td>t</td></tr>
+        <tr><th>6</td><td style="background-color: green;">u</td><td style="background-color: green;">v</td><td style="background-color: green;">w</td><td>y</td><td>z</td></tr>
+    </table>
+    <br>
+    <table style="width:30%">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr>
+        <tr><th>2</th><td>a</td><td style="background-color: lightgreen;"colspan="2" >b,c</td><td>d</td><td>e</td></tr>
+        <tr><th>3</td><td>f</td><td>g</td><td>h</td><td>i</td><td style="background-color: lightgreen;"colspan="2"rowspan="2" >j,o</td></tr> 
+         <tr><th>4</td><td>k</td><td>l</td><td>m</td><td>n</td></tr>
+            
+        <tr><th>5</td><td style="background-color: green;" colspan="3" rowspan="3">p, q, r, u, v, w</td><td>s</td><td>t</td></tr>
+        <tr><th>6</td><td>y</td><td>z</td></tr>
+    </table>
+    <br>
+    <table style="width:30%">
+        <tr><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr>
+        <tr><th>2</th><td>a</td><td style="background-color: lightgreen;">b</td><td style="background-color: lightgreen;">c</td><td>d</td><td>e</td></tr>
+        <tr><th>3</td><td>f</td><td>g</td><td>h</td><td>i</td><td style="background-color: green;"colspan="1"rowspan="2">j</td></tr>
+        <tr><th>4</td><td style="background-color: green;" colspan="3" rowspan="2">k,l,m,n,o,p, q, r, u, v, w</td ><td style="background-color: green;" colspan="2" rowspan="1"></td></tr>
+            
+        <tr><th>6</td><td>y</td><td>z</td></tr>
+    </table>
+</body>
+</html>
